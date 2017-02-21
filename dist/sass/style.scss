@@ -1,0 +1,239 @@
+// custom var
+@import "custom";
+
+// fonts
+@import "fonts";
+
+// boorstrap
+@import "bootstrap.min";
+
+// reset
+@import "reset";
+
+// default-class
+@import "default-class";
+
+// layout
+@import "layout";
+
+
+// style for corusel in index
+.logo{
+	padding: 25px 130px 20px 15px;
+}
+.about-us {
+	width: 285px;
+	display: inline-block;
+	line-height: 21px;
+	span {
+		color: $greyTextColorHeader;
+		font-weight: bold;
+	}
+	p {
+		padding-left: 50px;
+	}
+}
+.contacts {
+	padding-left: 25px;
+	span {
+		color: $greyTextColorHeader;
+		font-weight: bold;
+	}
+}
+.contacts-2 {
+	padding-left: 30px;
+	span {
+		color: $greyTextColorHeader;
+		font-weight: bold;
+	}
+}
+.header-nav {
+	background: $lightGreyBg;
+	ul {
+		margin: 0 70px;
+	}
+	ul li {
+		line-height: 70px;
+		list-style: none;
+	}
+	ul li a {
+		display: inline-block;
+		border-bottom: 1px solid transparent;
+		padding: 0 15px;
+	}
+	ul li.active a {
+		border-color: $darkGreen;
+	}
+	ul li a:hover {
+		border-color: $darkGreen;
+		color: $darkGreen;
+	}
+}
+.sidebar-list {
+	padding: 85px 45px 75px 80px;
+	li + li {
+		padding-top: 15px;
+	}
+	:hover {
+		color: $darkGreen;
+	}
+}
+.carousel{
+	margin-right: -15px;
+}
+.carousel-caption {
+	left: 0;
+	right: auto;
+	bottom: 60px;
+	text-align: left;
+	padding: 20px 25px 20px 70px;
+	background: $lightGreen;
+	span {
+		color: $greyTextColor;
+		font-size: 2.143em;
+	}
+}
+.carousel-indicators {
+	left: 11%;
+	li {
+		border-color: $lightGreen;
+	}
+	.active {
+		background-color: $lightGreen;
+	}
+}
+.advantages {
+	@extend %indents70;
+	.title {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+}
+.advantages-text {
+	margin-top: 20px;
+}
+// buy-diplom block
+.buy-diplom {
+	@extend %indents70;
+	.button {
+		margin-top: 30px;
+	}
+}
+// why
+.why {
+	.why-item {
+		padding: 0 30px;
+	}
+	.why-item-title {
+		padding-top: 30px;
+	}
+	@extend %indents70;
+	text-align: center;
+	p {
+		padding-top: 30px;
+	}
+	span {
+		color: $greyTextColorHeader;
+		font-size: 2.143em;
+	}
+}
+// reviews
+.reviews{
+	@extend %indents70;
+	.all-reviews{
+		margin: 0 -30px;
+	}
+	.review-title{
+		background: $lightGreen;
+		padding: 9px 30px;
+		overflow: hidden;
+	}
+	.review-text{
+		padding: 13px 30px;
+		text-align: justify;
+	}
+	.button {
+		margin-top: 17px;
+	}
+}
+// question
+.question{
+	padding-bottom: 85px;
+}
+.input-grup{
+	padding-left: 15px;
+	margin-bottom: 20px;
+	position: relative;
+	display: inline-block;
+	z-index: 1;
+	.input-element{
+			border-radius: 25px;
+			line-height: 50px;
+			width: 390px;
+			background: transparent;
+			&:focus{
+				& + .placeholder{
+				opacity: 0;
+			}
+		}
+	}
+}
+.text-area-grup{
+	position: relative;
+	display: inline-block;
+	z-index: 1;
+	.text-area-element{
+		border-radius: 25px;
+		line-height: 50px;
+		width: 390px;
+		background: transparent;
+			&:focus{
+				& + .placeholder{
+				opacity: 0;
+			}
+		}
+	}
+}
+.placeholder{
+	position: absolute;
+	left: 30px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: -1;
+	-webkit-transition: all .5s linear;
+	-moz-transition: all .5s linear;
+	-ms-transition: all .5s linear;
+	-o-transition: all .5s linear;
+	transition: all .5s linear;
+	sup{
+		color: red;
+	}
+}
+
+.footer {
+	.footer-nav {
+		background: $darkGreen;
+		ul {
+		margin: 0 70px;
+		}
+		ul li {
+		line-height: 70px;
+		list-style: none;
+		}
+		ul li a {
+		display: inline-block;
+		padding: 0 15px;
+		}
+		ul li.active a {
+		border-color: $darkGreen;
+		}
+		ul li a:hover {
+		border-color: $darkGreen;
+		color: $darkGreen;
+		}
+	}
+}

@@ -1,0 +1,26 @@
+body {
+	background: url('../img/body-bg.jpg') no-repeat top center;
+	background-size: cover;
+	line-height: 1;
+	font-size: $standartFontSize;
+	margin: 0 auto;
+	font-family: 'Lato', sans-serif;
+}
+ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	color: #000;
+	text-decoration: none;
+}
+.wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+	background: #fff;
+}

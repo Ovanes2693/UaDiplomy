@@ -1,0 +1,79 @@
+// standart style for before and after
+%styleForPseudoElement{
+	display: inline-block;
+	content: "";
+}
+
+%indents70 {
+	padding: 70px 0;
+}
+// vertical align
+.vertical-align {
+	& > * {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&::before{
+		@extend %styleForPseudoElement;
+		height: 100%;
+		vertical-align: middle;
+		margin-left: -4px;
+	}
+}
+// standart-bg
+.bg-grey{
+	background: $lightGreyBg !important;
+}
+// standart title file 
+.title {
+	padding-bottom: 45px;
+	text-align: center;
+	font-size: 2.143em;
+	span{
+		color: $greyTextColor;
+		text-align: center;
+	}	
+}
+
+// standart text color class
+.color-green {
+	color: $darkGreen !important;
+}
+p {
+	color: $greyTextColor;
+	line-height: 1.7;
+	text-align: justify;
+}
+// standart button
+.button {
+	display: inline-block;
+	border-radius: 30px;
+	font-size: 1.28em;
+	text-transform: uppercase;
+	&.big-btn {
+		padding: 20px 40px;
+	}
+	&.small-btn{
+		padding: 10px 20px;
+	}
+	&.light-green{
+		background: $btnLightGreen;
+		color: $btnGreyColor;
+	}
+	&.dark-green {
+		background: $btnDarkGreen;
+		color: $btnWhiteColor;
+	}
+}
+.dotted {
+	padding: 30px 0;
+	text-align: center;
+	span {
+		width: 9px;
+		height: 9px;
+		background: $lightGreen;
+		margin: 0 5px;
+		border-radius: 50%;
+		display: inline-block;
+	}
+}
